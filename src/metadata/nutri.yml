@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/nutri
+
+idspace: NUTRI
+base_url: /obo/nutri
+
+products:
+- nutri.owl: https://raw.githubusercontent.com/pputhran2018/nutrition-ontology/master/nutri.owl
+- nutri.obo: https://raw.githubusercontent.com/pputhran2018/nutrition-ontology/master/nutri.obo
+
+term_browser: ontobee
+example_terms:
+- NUTRI_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/pputhran2018/nutrition-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/pputhran2018/nutrition-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/NUTRI?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/pputhran2018/nutrition-ontology/master/
